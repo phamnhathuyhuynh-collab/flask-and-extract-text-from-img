@@ -19,7 +19,6 @@ document.getElementById('imageUpload').addEventListener('change', function () {
             data: JSON.stringify({ 'value': pureBase64 }),
             success: function(response) {
                 showText.innerText = response.text;
-                console.log(response.text);
             },
             error: function(error) {
                 console.log(error);
